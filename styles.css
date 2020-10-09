@@ -1,0 +1,107 @@
+body {
+    box-sizing: border-box;
+}
+
+/* Styling applying to background and adding main as a flexbox */
+
+main {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #B7F8DB, #50A7C2);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Heading styling */
+
+.largeHeading {
+    text-align: center;
+    font-family: "Sofia";
+    color: #3F434F;
+    text-shadow: 5px 5px #EEF3FF;
+    font-size: 100px;
+    padding-bottom: 0px;
+}
+
+/* Welcome text styling */
+
+.welcomeText {
+    text-align: center;
+    font-family: "Alike Angular";
+    font-size: 40px;
+    color: #3F434F;
+    text-shadow: 2px 2px #EEF3FF;
+    margin-top: 0px;
+}
+
+
+/* Flexbox parent */
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Flexbox children */
+
+.pic {
+    max-width: 300px;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 20px;
+    box-shadow: 8px 8px 5px darkslategray;
+}
+
+@media screen and (max-width: 800px) {
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .largeHeading {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 70px;
+    }
+
+    .pic {
+        max-width: 70%;
+        height: auto;
+
+    }
+
+    .welcomeText {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .largeHeading {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 50px;
+    }
+
+    .pic {
+        max-width: 80%;
+        height: auto;
+    }
+}
